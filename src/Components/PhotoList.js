@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios"
 import PhotoCard from "./PhotoCard"
+import { Container } from "reactstrap"
 
 const PhotoList = () => {
     const [pic, setPic] = useState([]);
+
     useEffect(() => {
         axios
             .get("https://api.nasa.gov/planetary/apod?api_key=YMt7efMfeJo8SZGJUMi3TLU6SsdcaD42cnA2a8Jt")
@@ -16,9 +18,9 @@ const PhotoList = () => {
             })
     }, [])
     return (
-        <div>
+        <Container>
             <PhotoCard pic={pic} />
-        </div>
+         </Container>
     )
 };
 
