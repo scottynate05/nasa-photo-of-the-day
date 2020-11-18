@@ -7,6 +7,7 @@ import styled from "styled-components";
 const Clr = styled.div`
   padding-bottom: 80px;
   background-color: papayawhip;
+  background-size: cover;
 `;
 
 function App() {
