@@ -1,15 +1,26 @@
 import React from "react";
 import "./App.css";
+import PhotoList from './Components/PhotoList';
+import Header from "./Components/Header";
+import styled from "styled-components";
+
+const Clr = styled.div`
+  padding-bottom: 80px;
+  background-color: papayawhip;
+  background-size: cover;
+`;
 
 function App() {
   return (
-    <div className="App">
-      <p>
-        Read through the instructions in the README.md file to build your NASA
-        app! Have fun 🚀!
-      </p>
-    </div>
+    <Clr>
+      <div className="App">
+        <Header />
+        <PhotoList />
+      </div>
+    </Clr>
   );
 }
+
+// first line!
 
 export default App;
